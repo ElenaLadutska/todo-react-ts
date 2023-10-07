@@ -1,0 +1,5 @@
+.todos {
+  @include flex();
+  flex-direction: column;
+  width: fit-content;
+}

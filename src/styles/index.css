@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Mona-Bold";
+  src: url(../font/MonaSans/OTF/Mona-Sans-Bold.otf);
+}
+@font-face {
+  font-family: "Mona";
+  src: url(../font/MonaSans/Mona-Sans.ttf);
+}
+.container .adding-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 2px solid #A4A4A4;
+  border-radius: 1em;
+  padding: 0.5em;
+  flex: 2;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .adding-container input {
+  width: 80%;
+}
+.container .adding-container .add-todo-btn {
+  background-color: #BFD3F7;
+  border: none;
+  border-radius: 0.5em;
+  color: #6B9FFD;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  flex: 1;
+}
+header .searching-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 2px solid #A4A4A4;
+  border-radius: 1em;
+  padding: 0.5em;
+  flex: 1;
+  width: 50%;
+}
+header .searching-container .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5em;
+}
+header .searching-container .search input {
+  width: 90%;
+}
+
+.header-clock {
+  border-left: 1px solid #A4A4A4;
+  padding: 0 1em;
+  text-align: center;
+}
+.header-clock .header-time {
+  font-family: "Mona-Bold";
+}
+.header-clock .header-date {
+  color: #A4A4A4;
+  font-size: small;
+}
+
+.todos {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.todo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.todo span {
+  align-self: self-start;
+}
+
+* {
+  font-family: "Mona";
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: "Mona-Bold";
+}/*# sourceMappingURL=index.css.map */

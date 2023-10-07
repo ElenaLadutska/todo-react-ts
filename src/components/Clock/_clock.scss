@@ -1,0 +1,14 @@
+.header-clock {
+  border-left: 1px solid $grey;
+  padding: 0 1em;
+  text-align: center;
+
+  .header-time {
+    font-family: $bold-font;
+  }
+
+  .header-date {
+    color: $grey;
+    font-size: small;
+  }
+}

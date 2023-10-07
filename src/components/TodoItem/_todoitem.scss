@@ -1,0 +1,9 @@
+.todo {
+  @include flex();
+  justify-content: space-between;
+  flex-grow: 1;
+
+  span {
+    align-self:self-start;
+  }
+}

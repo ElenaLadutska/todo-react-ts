@@ -1,0 +1,17 @@
+@import "_mixins";
+@import "_variables";
+@import "../components/app";
+@import "../components/FindTask/_header";
+@import "../components/Clock/clock";
+@import "../components/TodoList/todolist";
+@import "../components/TodoItem/todoitem";
+
+* {
+  font-family: $primary-font;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: $bold-font;
+}

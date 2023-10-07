@@ -1,0 +1,28 @@
+.container {
+  .adding-container {
+    @include flex();
+    justify-content: space-between;
+    border: 2px solid $grey;
+    border-radius: 1em;
+    padding: .5em;
+    flex: 2;
+    width: fit-content;
+  
+    input {
+      width: 80%;
+    }
+
+    .add-todo-btn {
+      background-color: $back-blue;
+      border: none;
+      border-radius: .5em;
+      color: $btns-color;
+      cursor: pointer;
+      font-weight: 600;
+      padding: .5em;
+    }
+  }
+}
+
+
+
