@@ -1,5 +1,29 @@
-.todos {
+.todos-container {
   @include flex();
-  flex-direction: column;
-  width: fit-content;
+  font-family: $primary-font;
+  margin-top: 1.5em;
+
+  .todos {
+    @include flex();
+    justify-content: space-evenly;
+    width: 100%;
+
+    .todos-todo {
+      margin: $usual-spacing 0;
+    }
+    .todos-todo:not(:empty) {
+      background-color: $background-color;
+      border-radius: 10px;
+      padding: $little-spacing;
+    }
+  }
+
+  .todos > * {
+    flex-direction: column;
+    background-color: $back-blue;
+    border-radius: 10px;
+    height: fit-content;
+    padding: $little-spacing $usual-spacing;
+    width: 25%;
+  }
 }

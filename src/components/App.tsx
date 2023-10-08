@@ -65,6 +65,7 @@ const App:React.FC = () => {
       </header>
 
       <TodoList 
+        setTodos={setTodos}
         items={todos} 
         removeTodo={removeTodo} 
         toggleTodo={toggleTodo} 

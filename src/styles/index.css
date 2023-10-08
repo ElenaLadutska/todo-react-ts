@@ -6,9 +6,12 @@
   font-family: "Mona";
   src: url(../font/MonaSans/Mona-Sans.ttf);
 }
+.container {
+  margin: 0.5em;
+}
 .container .adding-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   border: 2px solid #A4A4A4;
   border-radius: 1em;
@@ -21,10 +24,10 @@
   width: 80%;
 }
 .container .adding-container .add-todo-btn {
-  background-color: #BFD3F7;
+  background-color: #6B9FFD;
   border: none;
   border-radius: 0.5em;
-  color: #6B9FFD;
+  color: #F6F6F6;
   cursor: pointer;
   font-weight: 600;
   padding: 0.5em;
@@ -32,13 +35,13 @@
 
 header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: stretch;
   flex: 1;
 }
 header .searching-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   border: 2px solid #A4A4A4;
   border-radius: 1em;
@@ -69,22 +72,51 @@ header .searching-container .search input {
   font-size: small;
 }
 
-.todos {
+.todos-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  font-family: "Mona";
+  margin-top: 1.5em;
+}
+.todos-container .todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.todos-container .todos .todos-todo {
+  margin: 1em 0;
+}
+.todos-container .todos .todos-todo:not(:empty) {
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.todos-container .todos > * {
   flex-direction: column;
-  width: -moz-fit-content;
-  width: fit-content;
+  background-color: #BFD3F7;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5em 1em;
+  width: 25%;
 }
 
 .todo {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
   justify-content: space-between;
   flex-grow: 1;
+  margin-bottom: 0.5em;
 }
 .todo span {
   align-self: self-start;
+}
+
+.todo:hover {
+  background-color: rgba(191, 211, 247, 0.8);
+  cursor: pointer;
 }
 
 * {
@@ -94,5 +126,9 @@ header .searching-container .search input {
 input {
   border: none;
   outline: none;
+  font-family: "Mona-Bold";
+}
+
+h1, h2, h3 {
   font-family: "Mona-Bold";
 }/*# sourceMappingURL=index.css.map */
