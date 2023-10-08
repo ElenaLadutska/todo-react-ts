@@ -5,6 +5,7 @@ header {
 
   .searching-container {
     @include flex();
+    flex-wrap: nowrap;
     justify-content: space-between;
     border: 2px solid $grey;
     border-radius: 1em;

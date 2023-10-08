@@ -7,7 +7,7 @@ const Clock:React.FC = () => {
   const [month, setMonth] = useState("");
 
   const getCurrentTime = () => {
-    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     const currentTime = new Date();
@@ -21,7 +21,7 @@ const Clock:React.FC = () => {
     const formatTimeUnit = (unit:number) => String(unit).padStart(2, '0');
 
     setTime(`${formatTimeUnit(hours)} : ${formatTimeUnit(minutes)} : ${formatTimeUnit(seconds)}`);
-    setWeekday(days[currentTime.getDay() - 1]);
+    setWeekday(days[currentTime.getDay()]);
     setDay(currentDay);
     setMonth(months[currentMonth])
   };

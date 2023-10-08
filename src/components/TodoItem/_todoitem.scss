@@ -1,9 +1,11 @@
 .todo {
   @include flex();
   background-color: $background-color;
+  border-radius: 10px;
   justify-content: space-between;
   flex-grow: 1;  
   margin-bottom: $little-spacing;
+  padding: $little-spacing;
 
   span {
     align-self:self-start;
@@ -11,6 +13,7 @@
 }
 
 .todo:hover {
-  background-color: rgba($color: $back-blue, $alpha: .8);
+  background-color: rgba($color: $btns-color, $alpha: .8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
