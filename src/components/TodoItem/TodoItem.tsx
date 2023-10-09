@@ -22,23 +22,13 @@ const TodoItem: React.FC<ITodoItem> = ({todo, id, title, complete, toggleTodo, r
         <div className="todo-content">
           <input type="checkbox" checked={complete} onChange={() => toggleTodo(id)}/>
 
-          <span style={{
-            display: "inline-block",
-            margin: "0 10px"
-          }}>
+          <span>
             {title}
           </span>
         </div>
 
         <button 
           onClick={() => removeTodo(id)}
-          style={{
-            background: "transparent",
-            border: "none",
-            outline: "none",
-            color: "red",
-            cursor: "pointer"
-          }}
         >x</button>
       </Reorder.Item>
   )

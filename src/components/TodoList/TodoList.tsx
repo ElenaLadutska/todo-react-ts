@@ -10,7 +10,7 @@ interface ITodoListProps {
 }
 
 const TodoList:React.FC<ITodoListProps>= ({items, setTodos, toggleTodo, removeTodo}) => {
-  const handleReorder = (newItems: ITodo[]) => setTodos(newItems)
+  const handleReorder = (newItems: ITodo[]) => setTodos(newItems);
 
   return (
     <div className="todos-container">
@@ -19,9 +19,9 @@ const TodoList:React.FC<ITodoListProps>= ({items, setTodos, toggleTodo, removeTo
           <h3>To do</h3>
 
         {!!items.length && 
-          <div className="todos-todo">
             <Reorder.Group 
               as="div"
+              className="todos-todo"
               onReorder={handleReorder} 
               values={items}
               axis="y"
@@ -35,8 +35,7 @@ const TodoList:React.FC<ITodoListProps>= ({items, setTodos, toggleTodo, removeTo
                     removeTodo={removeTodo}
                       {...todo} />)
               }
-            </Reorder.Group>
-          </div>}
+            </Reorder.Group>}
         </div>
 
         <div className="todos-in-progress-container">

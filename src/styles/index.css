@@ -42,6 +42,7 @@ header {
 header .searching-container {
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   border: 2px solid #A4A4A4;
   border-radius: 1em;
@@ -88,7 +89,6 @@ header .searching-container .search input {
   margin: 1em 0;
 }
 .todos-container .todos .todos-todo:not(:empty) {
-  background-color: #F6F6F6;
   border-radius: 10px;
   padding: 0.5em;
 }
@@ -105,17 +105,37 @@ header .searching-container .search input {
 .todo {
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: #F6F6F6;
+  border-radius: 10px;
   justify-content: space-between;
   flex-grow: 1;
   margin-bottom: 0.5em;
+  padding: 0.5em;
 }
-.todo span {
+.todo .todo-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+.todo .todo-content span {
   align-self: self-start;
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: red;
+  cursor: pointer;
 }
 
 .todo:hover {
-  background-color: rgba(191, 211, 247, 0.8);
+  background-color: rgba(107, 159, 253, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 

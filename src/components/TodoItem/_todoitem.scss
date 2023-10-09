@@ -1,5 +1,7 @@
 .todo {
   @include flex();
+  flex-wrap: nowrap;
+
   background-color: $background-color;
   border-radius: 10px;
   justify-content: space-between;
@@ -7,8 +9,25 @@
   margin-bottom: $little-spacing;
   padding: $little-spacing;
 
-  span {
-    align-self:self-start;
+  .todo-content {
+    @include flex();
+    flex-wrap: nowrap;
+    width: 90%;
+
+    span {
+      align-self:self-start;
+      margin: 0 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: red;
+    cursor: pointer
   }
 }
 
